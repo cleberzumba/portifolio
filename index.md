@@ -1,37 +1,59 @@
-## Welcome to GitHub Pages
+{% extends "layout.html" %}
+{% block body %}
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Python Flask App</title>
 
-You can use the [editor on GitHub](https://github.com/cleberzumba/portifolio/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+   
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="https://getbootstrap.com/docs/3.3/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+   
+  </head>
 
-### Markdown
+  <body bgcolor="yellow" id="top">
+	<style> body {background-color:white;} </style>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <div class="container">
+      <div class="header">
+	    <h1><center><font CLASS="blue" face="geneva">Olá, seja bem vindo!</font></center></h1>
+        <h1><center>Eu sou</center></h1>
+		<h1><center>{{name}}</center></h1>
+		<h3><small><center>| ENGENHEIRO DE DADOS | ANALISTA DE DADOS | CLOUD ENGINEER |</center></small></h3>
+      </div>
 
-```markdown
-Syntax highlighted code block
+      <div>
+        <h1>Acompanhe Meu Portfólio de Projetos</h1>
+        <p class="lead"></p>
+      </div>
 
-# Header 1
-## Header 2
-### Header 3
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>Projeto 1</h4>
+          <p>Análise e Exploração de Dados com Python.</p>
 
-- Bulleted
-- List
+          <h4>Projeto 2</h4>
+          <p>Engenharia de Dados com Hadoop e Spark.</p>		  
+        </div>
+		
+        <div class="col-lg-6">
+          <h4>Projeto 3</h4>
+          <p>Migração de Dados Para Nuvem.</p>
+		  
+          <h4>Projeto 3</h4>
+          <p>Integração de Dados com a Apache NIFI.</p>		  
+        </div>		
+      </div>
 
-1. Numbered
-2. List
+	  
+      <footer class="footer">
+        <p>&copy; Cleber Zumba</p>
+      </footer>
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/cleberzumba/portifolio/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+    </div>
+  </body>
+</html>
+{% endblock %}
